@@ -1,6 +1,5 @@
 package com.pluralsight;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class FullNameParser {
@@ -10,7 +9,7 @@ public class FullNameParser {
         // name in one of the following two formats:
         //first last or first middle last
         System.out.print("Please enter your first and or middle and last name: ");
-        String input = scanner.nextLine();
+        String input = scanner.nextLine().trim();
 
         String[] userNameFormat = input.split(" ");
 
